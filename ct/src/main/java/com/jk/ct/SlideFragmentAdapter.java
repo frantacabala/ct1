@@ -10,12 +10,15 @@ import android.support.v4.app.FragmentPagerAdapter;
 public class SlideFragmentAdapter extends FragmentPagerAdapter {
     public SlideFragmentAdapter(FragmentManager fm) {
         super(fm);
+
     }
+
 
 
 
     @Override
     public Fragment getItem(int i) {
+
         return new ScreenSlideFragment();
     }
 

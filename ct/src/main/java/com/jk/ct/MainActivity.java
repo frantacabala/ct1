@@ -17,6 +17,7 @@ import android.support.v4.widget.DrawerLayout;
 import android.widget.AdapterView;
 import android.widget.ListView;
 
+
 import java.util.ArrayList;
 
 public class MainActivity extends FragmentActivity{
@@ -85,6 +86,12 @@ public class MainActivity extends FragmentActivity{
     }
 
     private void displayView(int position) {
+
+        FragmentManager fm = getSupportFragmentManager();
+        for(int i = 0;i<fm.getBackStackEntryCount();i++){
+            fm.popBackStack();
+        }
+
         Fragment fragment=null;
         switch(position){
             case 0:
@@ -102,7 +109,7 @@ public class MainActivity extends FragmentActivity{
 
         }
         if(fragment!=null){
-            FragmentManager fm=getSupportFragmentManager();
+
 
             fm.beginTransaction().replace(R.id.frame_container,fragment,fragment.getTag()).commit();
 
