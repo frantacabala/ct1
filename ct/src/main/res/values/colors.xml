@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="list_background_pressed">@android:color/holo_blue_bright</color>
+    <color name="list_selector">@android:color/holo_orange_dark</color>
+    <color name="list_divider">@android:color/darker_gray</color>
+    <color name="list_background">@android:color/background_dark</color>
+    <color name="counter_text_bg">@android:color/white</color>
+    <color name="list_item_title">@android:color/holo_red_light</color>
+    <color name="counter_text_color">@android:color/holo_green_light</color>
+</resources>
