@@ -28,13 +28,18 @@
     <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="Unnamed-0" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7e306cfb-36ba-4001-aa29-0a03681ed6d4" name="Default" comment="REST_API">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ct/src/main/java/com/jk/ct/SlideFragmentAdapter.java" afterPath="$PROJECT_DIR$/ct/src/main/java/com/jk/ct/SlideFragmentAdapter.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build.gradle" afterPath="$PROJECT_DIR$/build.gradle" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ct/build.gradle" afterPath="$PROJECT_DIR$/ct/build.gradle" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ct/ct.iml" afterPath="$PROJECT_DIR$/ct/ct.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ct/src/main/res/values/strings.xml" afterPath="$PROJECT_DIR$/ct/src/main/res/values/strings.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
+    <list default="true" id="7e306cfb-36ba-4001-aa29-0a03681ed6d4" name="Default" comment="REST_API&#10;">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ct/src/main/java/com/jk/ct/CustomApi/CustomApiInterface.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ct/src/main/java/com/jk/ct/CustomApi/CustomApiService.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__gson_2_2_4.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__retrofit_1_4_1.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ct/src/main/java/com/jk/ct/model/CustomApi/Lecture.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ct/src/main/java/com/jk/ct/CustomApi/LectureCallback.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ct/src/main/java/com/jk/ct/LectureFragment.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ct/src/main/res/layout/custom_list_line.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ct/src/main/res/layout/fragment_lecture.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/gson_2_2_4.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/retrofit_1_4_1.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="ct_test1.iws" />
@@ -144,7 +149,7 @@
       <file leaf-file-name="LectureFragment.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/ct/src/main/java/com/jk/ct/LectureFragment.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="58" column="47" selection-start="1834" selection-end="1834" vertical-scroll-proportion="0.4231405" vertical-offset="788" max-vertical-offset="1980">
+            <state line="58" column="47" selection-start="1834" selection-end="1834" vertical-scroll-proportion="0.42244226" vertical-offset="788" max-vertical-offset="1980">
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#1555#1564#0" expanded="true" />
@@ -1388,7 +1393,11 @@
       <created>1393975292690</created>
       <updated>1393975292690</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="REST_API">
+      <created>1393975480784</created>
+      <updated>1393975480784</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -1396,7 +1405,7 @@
     <editor active="false" />
     <layout>
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Changes" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32979852" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32979852" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32960597" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -1408,7 +1417,7 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Build Variants" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.10010649" sideWeight="0.5007899" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Gradle Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32873806" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32873806" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32873806" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Android" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32873806" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32960597" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="14" side_tool="false" content_ui="tabs" />
@@ -1416,7 +1425,7 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32960597" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.18849841" sideWeight="0.49921012" order="3" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.18849841" sideWeight="0.49921012" order="3" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32873806" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="7" side_tool="false" content_ui="combo" />
@@ -1468,7 +1477,8 @@
       <TodoPanelSettings />
     </option>
     <MESSAGE value="REST_API" />
-    <option name="LAST_COMMIT_MESSAGE" value="REST_API" />
+    <MESSAGE value="REST_API&#10;" />
+    <option name="LAST_COMMIT_MESSAGE" value="REST_API&#10;" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -1830,7 +1840,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/ct/src/main/java/com/jk/ct/LectureFragment.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="58" column="47" selection-start="1834" selection-end="1834" vertical-scroll-proportion="0.4231405" vertical-offset="788" max-vertical-offset="1980">
+        <state line="58" column="47" selection-start="1834" selection-end="1834" vertical-scroll-proportion="0.42244226" vertical-offset="788" max-vertical-offset="1980">
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#1555#1564#0" expanded="true" />
