@@ -18,6 +18,9 @@ public class SlideFragmentAdapter extends FragmentPagerAdapter {
 
     @Override
     public Fragment getItem(int i) {
+        if(i == 0){
+            return new LectureFragment();
+        }
 
         return new ScreenSlideFragment();
     }

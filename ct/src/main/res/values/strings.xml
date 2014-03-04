@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <string name="app_name"></string>
+    <string name="app_name">ct1</string>
     <string name="title_section1">Section 1</string>
     <string name="title_section2">Section 2</string>
     <string name="title_section3">Section 3</string>
@@ -9,22 +9,22 @@
     <string name="navigation_drawer_close">Close navigation drawer</string>
     <string name="action_example">Example action</string>
     <string name="action_settings">Settings</string>
-    
+
     <string-array name="nav_drawer_items">
         <item>Program</item>
         <item>Lidé</item>
         <item>Oblíbené</item>
     </string-array>
-    
+
     <array name="nav_drawer_icons">
         <item>@drawable/ic_program</item>
         <item>@drawable/ic_program</item>
         <item>@drawable/ic_program</item>
-
     </array>
 
     <string name="desc_list_item_icon">Item Icon</string>
     <string name="lorem_ipsum">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sed eleifend tellus. Donec eu libero gravida, pretium eros ullamcorper, consectetur sem. Aliquam erat volutpat. Phasellus sit amet erat pellentesque, mollis libero ac, vestibulum risus. Curabitur commodo, mi euismod bibendum facilisis, velit ante sodales magna, a mattis diam arcu eu tellus. Pellentesque accumsan sem vitae nisl condimentum, vel sagittis velit ullamcorper. Aenean a mi tempus, malesuada sem in, feugiat ante. Mauris malesuada sollicitudin sem non sollicitudin. Nulla erat nisi, lobortis non erat a, fermentum aliquet eros. Curabitur eget tortor id lorem volutpat pretium vel aliquet augue. Nunc malesuada eros vitae quam pretium, id venenatis diam ultricies. Vivamus molestie lorem vel mi ultricies, ut mattis ipsum placerat. Morbi adipiscing turpis vel nibh pulvinar iaculis. Duis ac pretium turpis. Proin eget placerat eros.</string>
     <string name="btn_detail">Ukaž detail</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 
 </resources>
