@@ -11,6 +11,6 @@ import retrofit.http.GET;
  * Created by john on 3/4/14.
  */
 public interface CustomApiInterface {
-   @GET("/lectures")
+   @GET("/lectures/{id}")
    public List<Lecture> getLectures();
 }

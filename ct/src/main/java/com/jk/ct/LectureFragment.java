@@ -1,8 +1,10 @@
 package com.jk.ct;
 
 import android.app.Activity;
+import android.app.ProgressDialog;
 import android.content.Context;
 import android.net.Uri;
+import android.os.AsyncTask;
 import android.os.Bundle;
 import android.os.StrictMode;
 import android.support.v4.app.Fragment;
@@ -42,36 +44,75 @@ public class LectureFragment extends Fragment {
         rootView = (ViewGroup) inflater.inflate(
                 R.layout.fragment_lecture, container, false);
         listView=(ListView)rootView.findViewById(R.id.listView);
-        adapter = new CustomLectureAdapter(loadData());
+        //listLecture=loadData();
+        adapter = new CustomLectureAdapter();
 
         listView.setAdapter(adapter);
+
+        CustomApiWorker cw=new CustomApiWorker();
+        cw.execute();
 
         return rootView;
     }
 
     public List<Lecture> loadData(){
-        List<Lecture> list = new ArrayList<Lecture>();
-        list.add(new Lecture(1,"hovno"));
-        list.add(new Lecture(2,"hovno 2"));
+
 
         CustomApiService service = new CustomApiService();
         CustomApiInterface apiInterface=service.getCustomApiInterface();
         StrictMode.ThreadPolicy policy = new StrictMode.ThreadPolicy.Builder().permitAll().build();
 
         StrictMode.setThreadPolicy(policy);
-        List<Lecture> lectures= apiInterface.getLectures();
+        //List<Lecture> lectures= apiInterface.getLectures();
 
-        return lectures;
+        return apiInterface.getLectures();
+    }
+
+    public class CustomApiWorker extends AsyncTask<Void,String,Void>{
+
+        ProgressDialog dialogue;
+
+        @Override
+        protected Void doInBackground(Void... voids) {
+
+            adapter.setListLecture(loadData());
+
+            return null;
+        }
+
+
+
+        @Override
+        protected void onPostExecute(Void result) {
+            super.onPostExecute(result);
+            dialogue.dismiss();
+
+            adapter.notifyDataSetChanged();
+        }
+
+        @Override
+        protected void onPreExecute() {
+            dialogue = new ProgressDialog(rootView.getContext());
+            dialogue.setTitle("Loading items..");
+            dialogue.show();
+            super.onPreExecute();
+
+        }
+
     }
 
     public class CustomLectureAdapter extends BaseAdapter {
 
         private List<Lecture> listLecture= Collections.emptyList();
 
-        public CustomLectureAdapter(List<Lecture> listLecture) {
-            this.listLecture = listLecture;
+        public CustomLectureAdapter() {
+
         }
 
+
+        public void setListLecture(List<Lecture> list){
+            listLecture=list;
+        }
         @Override
         public int getCount() {
             return listLecture.size();
